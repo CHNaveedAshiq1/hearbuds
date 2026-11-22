@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hearbuds Pro: Sound, carved from silence</title>
+<meta name="description" content="Hearbuds Pro wireless earbuds: studio-grade 11 mm drivers, adaptive noise cancellation, personalized spatial audio and up to 30 hours with the case. Pre-order for $199.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,900&family=Archivo+Narrow:ital,wght@1,700;1,900&family=Fraunces:ital,opsz,wght@1,9..144,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='13' cy='12' r='8' fill='%23111418'/%3E%3Crect x='17' y='14' width='5' height='13' rx='2.5' transform='rotate(-18 19 20)' fill='%23111418'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header" id="siteHeader" data-theme="dark">
+  <a class="logo" href="#top" data-goto="0" aria-label="Hearbuds, back to the start">HEARBUDS</a>
+  <nav class="main-nav" aria-label="Features">
+    <button class="nav-link is-active" data-goto="0" data-chapter="0">Hi-Fi Sound</button>
+    <button class="nav-link" data-goto="1" data-chapter="1">Adaptive ANC</button>
+    <button class="nav-link" data-goto="2" data-chapter="2">Spatial Audio</button>
+    <button class="nav-link" data-goto="3" data-chapter="3">30H Battery</button>
+    <span class="nav-underline" id="navUnderline" aria-hidden="true"></span>
+  </nav>
+  <button class="preorder" id="preorderBtn">Pre-order</button>
+</header>
+
+<main id="top">
+  <!-- ============ SCROLL STAGE ============ -->
+  <div class="scroll-space" id="scrollSpace">
+    <section class="stage" id="stage" aria-label="Hearbuds Pro in 3D, scroll to explore">
+      <div class="scene" id="scene" aria-hidden="true"></div>
+
+      <!-- Chapter 1 copy -->
+      <div class="copy copy-ch1" data-copy="0">
+        <ul class="rail" aria-label="Feature highlights">
+          <li><button data-goto="2"><span class="rail-ico" aria-hidden="true">◎</span>Personalized Spatial Audio</button></li>
+          <li><button data-goto="1"><span class="rail-ico" aria-hidden="true">≋</span>Adaptive Noise Cancellation</button></li>
+          <li><button data-goto="3"><span class="rail-ico" aria-hidden="true">↯</span>Up to 30 Hours With Case</button></li>
+          <li><button data-goto="2" data-goto-p="0.665"><span class="rail-ico" aria-hidden="true">◯</span>Pressure-Free Comfort</button></li>
+        </ul>
+        <div class="hero-copy">
+          <p class="eyebrow">Hearbuds Pro · Wireless Earbuds</p>
+          <h1>Sound, carved<br>from silence.</h1>
+          <p class="sub">Studio-grade drivers, adaptive noise cancellation and a case cut like stone.</p>
+        </div>
+      </div>
+
+      <!-- Chapter 2 copy -->
+      <div class="copy copy-ch2" data-copy="1" hidden>
+        <div class="anc-copy">
+          <p class="eyebrow">Adaptive ANC</p>
+          <h2>Silence, on<br>your terms.</h2>
+          <p class="sub">The buds read the world around you forty-eight thousand times a second, and turn it down. What is left is the music, and nothing else.</p>
+        </div>
+        <p class="designed-line">Designed for listeners</p>
+      </div>
+
+      <!-- Chapter 3 copy -->
+      <div class="copy copy-ch3" data-copy="2" hidden>
+        <p class="stat stat-left"><strong>6</strong><span>Hours playback</span></p>
+        <p class="stat stat-right"><strong>30</strong><span>Hours with the case</span></p>
+        <p class="eyebrow ch3-eyebrow">Spatial Audio</p>
+      </div>
+
+      <!-- Chapter 4 finale copy -->
+      <div class="copy copy-ch4" data-copy="3" hidden>
+        <div class="finale">
+          <p class="finale-name"><span class="rule" aria-hidden="true"></span>Hearbuds Pro<span class="rule" aria-hidden="true"></span></p>
+          <p class="finale-sub">Deep bass, clear vocals, instant connection, in a case you will want to hold.</p>
+          <div class="finale-actions">
+            <button class="pill pill-buy" id="buyBtn">Buy, $199</button>
+            <button class="pill pill-compare" id="compareBtn">Compare</button>
+          </div>
+          <div class="colours" role="radiogroup" aria-label="Colour">
+            <button class="colour is-selected" role="radio" aria-checked="true" data-colour="Midnight"><span class="dot dot-midnight" aria-hidden="true"></span>Midnight</button>
+            <button class="colour" role="radio" aria-checked="false" data-colour="Pearl"><span class="dot dot-pearl" aria-hidden="true"></span>Pearl</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3D labels (creator recipe: HTML pills + SVG leader lines) -->
+      <svg class="label-svg" id="labelSvg" aria-hidden="true"></svg>
+      <div class="labels" id="labels">
+        <div class="lbl" id="lbl-bluetooth" data-label="bluetooth">Bluetooth 5.4</div>
+        <div class="lbl" id="lbl-latency" data-label="latency">40 ms Low Latency</div>
+        <div class="lbl" id="lbl-driver" data-label="driver">11 mm dynamic driver</div>
+        <div class="lbl" id="lbl-tips" data-label="tips">Memory-silicone tips</div>
+        <div class="lbl" id="lbl-vent" data-label="vent">Pressure-relief vent</div>
+      </div>
+
+      <!-- Chapter counter -->
+      <div class="counter" aria-hidden="true">
+        <span class="counter-cap" id="counterCap">Hi-Fi Sound</span>
+        <span class="counter-num" id="counterNum">01</span>
+      </div>
+
+      <p class="scroll-hint" id="scrollHint">Scroll<span aria-hidden="true">↓</span></p>
+    </section>
+  </div>
+
+  <!-- ============ SPEC FOOTER ============ -->
+  <section class="specs" id="specs">
+    <div class="wrap">
+      <h2>Hearbuds Pro, the short version</h2>
+      <div class="spec-grid">
+        <div><strong>11 mm</strong><span>dynamic driver in each bud</span></div>
+        <div><strong>6 hours</strong><span>playback on a single charge</span></div>
+        <div><strong>30 hours</strong><span>total with the charging case</span></div>
+        <div><strong>Bluetooth 5.4</strong><span>with 40 ms low-latency mode</span></div>
+        <div><strong>Adaptive ANC</strong><span>with a pressure-relief vent</span></div>
+        <div><strong>$199</strong><span>pre-order, Midnight or Pearl</span></div>
+      </div>
+      <div class="spec-actions">
+        <button class="pill pill-buy dark" data-buy>Buy, $199</button>
+        <button class="pill pill-compare dark" data-compare>Compare</button>
+      </div>
+      <p class="fineprint">Demo website built from a design study. Hearbuds Pro is the product shown in the study film; figures are the ones the film itself states.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-row">
+    <span class="logo">HEARBUDS</span>
+    <p>Sound, carved from silence.</p>
+    <button class="text-link" data-buy>Pre-order, $199</button>
+  </div>
+</footer>
+
+<!-- Buy sheet -->
+<div class="sheet-backdrop" id="sheetBackdrop" hidden></div>
+<aside class="sheet" id="buySheet" hidden role="dialog" aria-modal="true" aria-labelledby="buyTitle">
+  <button class="sheet-close" data-close aria-label="Close">✕</button>
+  <p class="sheet-code">Hearbuds Pro · Pre-order</p>
+  <h3 id="buyTitle">Reserve your pair</h3>
+  <p class="sheet-intro">One price, everything included: the buds, the stone-cut case, three sizes of memory-silicone tips and a braided USB-C cable.</p>
+  <form id="buyForm" novalidate>
+    <div class="f-row">
+      <label>Your name
+        <input type="text" id="bfName" autocomplete="name" placeholder="Full name">
+      </label>
+      <label>Email
+        <input type="email" id="bfEmail" autocomplete="email" placeholder="you@example.com">
+      </label>
+    </div>
+    <div class="f-row">
+      <label>Colour
+        <select id="bfColour">
+          <option>Midnight</option>
+          <option>Pearl</option>
+        </select>
+      </label>
+      <label>Quantity
+        <select id="bfQty">
+          <option value="1">1 pair</option>
+          <option value="2">2 pairs</option>
+          <option value="3">3 pairs</option>
+        </select>
+      </label>
+    </div>
+    <p class="sheet-total">Total due today: <strong id="bfTotal">$199</strong><span class="sheet-total-note">Charged only when your pair ships.</span></p>
+    <p class="f-error" id="bfError" hidden></p>
+    <button class="pill pill-buy submit" type="submit">Confirm pre-order</button>
+    <div class="f-success" id="bfSuccess" hidden>
+      <p class="f-success-title">Pre-order confirmed.</p>
+      <p id="bfSuccessText"></p>
+      <button class="text-link" type="button" data-close>Done</button>
+    </div>
+  </form>
+</aside>
+
+<!-- Compare sheet -->
+<aside class="sheet" id="compareSheet" hidden role="dialog" aria-modal="true" aria-labelledby="compareTitle">
+  <button class="sheet-close" data-close aria-label="Close">✕</button>
+  <p class="sheet-code">Compare</p>
+  <h3 id="compareTitle">Pro, or the standard bud?</h3>
+  <p class="sheet-intro">What the extra silence costs, and what it buys.</p>
+  <table class="compare-table">
+    <thead><tr><th></th><th>Hearbuds Pro</th><th>Hearbuds</th></tr></thead>
+    <tbody>
+      <tr><th>Driver</th><td>11 mm dynamic</td><td>8 mm dynamic</td></tr>
+      <tr><th>Noise cancellation</th><td>Adaptive ANC</td><td>Passive seal</td></tr>
+      <tr><th>Spatial audio</th><td>Personalized, head-tracked</td><td>Fixed stereo</td></tr>
+      <tr><th>Playback</th><td>6 hours</td><td>5 hours</td></tr>
+      <tr><th>With the case</th><td>30 hours</td><td>20 hours</td></tr>
+      <tr><th>Latency</th><td>40 ms game mode</td><td>90 ms</td></tr>
+      <tr><th>Pressure-relief vent</th><td>Yes</td><td>No</td></tr>
+      <tr><th>Price</th><td>$199</td><td>$129</td></tr>
+    </tbody>
+  </table>
+  <button class="pill pill-buy submit" data-buy-from-compare>Buy the Pro, $199</button>
+  <p class="fineprint">The standard Hearbuds column is composed for this demo comparison; the Pro column uses only the figures the film states.</p>
+</aside>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
